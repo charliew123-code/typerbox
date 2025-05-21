@@ -1,0 +1,187 @@
+@import "https://fonts.googleapis.com/css?family=Fira+Code&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  position:relative;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+}
+
+.current-word { border-bottom: 2px solid #000000 }
+
+body {
+  margin: 0 auto;
+  background-color: black;
+  color: black;
+  font-family:segoe ui variable,segoe ui,sans-serif;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+}
+header h3 { font-weight: normal; }
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+#timer, #restart {
+  margin: 0.2em;
+  padding: 0.25em;
+}
+
+#typing-test {
+  background: #2549a0;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 10px #2549a0, inset 0 0 0 1px #ffffff77;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#word-section {
+  font-size: 1.5em;
+  line-height: 1.25em;
+
+  border-radius: 0.25em;
+  position: relative;
+  overflow: hidden;
+}
+
+#charactersBeingTyped {
+  border-radius: 0.25em;
+  background: #265818;
+  padding: 0.25em;
+  margin:0.25em;
+}
+
+#word-section > span {
+  display: inline-block;
+  margin-left: 0.44em; /* emulate spaces between words */
+  max-width: 100%;
+  word-wrap:break-word;
+  border-bottom: 2px solid #00000000;
+  color:white;
+}
+
+#word-section > span.current-word { border-bottom: 2px solid #ffffff }#word-section > span.correct-word-c { color:  #a8fe57 }#word-section > span.incorrect-word-bg { background:  #f87c73; color: black; border: none; }
+
+#type-section { text-align: center; }
+#type-section > * {
+  font-size: 1.5em;
+  display: inline-block;
+  border-radius: 0.25em;
+  border: none;
+  color: #fff;
+  vertical-align: middle;
+  color: black;
+}
+
+#typebox {
+  width: 100%;
+  background: #00000000;
+  color:white;
+  padding: 0.25em;
+}
+#typebox:focus { outline: none; }
+
+#timer {
+  width: 4em;
+  background-color: #467F21;
+  margin-right: 0;
+  display: none;
+}
+
+#restart {
+  width: 2em;
+  background-color: #68A143;
+}
+#restart > span {
+  display: inline-block;
+  transform: rotate(1.5Rad);
+  font-weight: bold;
+}
+#restart:hover { background-color: #467F21; }
+#restart:active { box-shadow: 1px 1px 4px #467F21 inset; }
+
+#results {
+  text-align: center;
+  margin: 0 1%;
+  display: block;
+  color:white;
+}
+#results li { list-style: none; }
+#results li:first-child { font-size: 1.5em; }
+#results li:nth-child(2) {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+#results #results-stats { font-size: 15px; }
+
+footer {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 0.8em;
+  color: #000;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer a:hover { text-decoration: underline; }
+
+/* hides small bit of residule text after scrolling */
+.magic-box {
+  position: fixed;
+  width: inherit;
+  height: 0.5em;
+  top: 54px;
+  background-color: #fff;
+}
+
+.waiting {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 3em;
+}
+
+.current-word { border-bottom: 2px solid #000000 }
+#results-stats {
+  font-size: 11px;
+}
+/* import must be at top of stylesheet, otherwise it will not work*/
+@import "https://fonts.googleapis.com/css?family=Fira+Code&display=swap";
+#word-section, #typebox {
+  font-family: segoe ui variable,segoe ui,sans-serif;
+}
+
+a {
+  color: white;
+}
+#content {
+  background: white;
+  padding: 10px;
+  border-collapse: separate;
+  
+  border: 1px solid #00000088;
+  border-radius: 10px !important;
+  
+}
+#window {
+  position:relative;
+  left:8%;
+  -webkit-transform: translate(0%, 10%);
+  -moz-transform: translate(0%, 10%);
+  transform: translate(0%, 10%);
+  width: 75%;
+  height: 50vh;
+  
+  overflow: scroll;
+  scrollbar-color: #00000000 #00000000;
+}
