@@ -158,7 +158,7 @@ footer a:hover { text-decoration: underline; }
 /* import must be at top of stylesheet, otherwise it will not work*/
 @import "https://fonts.googleapis.com/css?family=Fira+Code&display=swap";
 #word-section, #typebox {
-  font-family: segoe ui variable,segoe ui,sans-serif;
+  font-family: segoe ui variable,fira code,segoe ui,sans-serif;
 }
 
 a {
