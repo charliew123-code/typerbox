@@ -185,3 +185,23 @@ a {
   overflow: scroll;
   scrollbar-color: #00000000 #00000000;
 }
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+.intro {
+  color:white;
+  background: #333333;
+  position:absolute;
+  z-index: 100;
+  width: 100%;
+  height: 200%;
+  font-size: 200px;
+  line-height: 900px;
+  padding-left: 300px;
+  animation: slide 2000ms ease-in-out 1s both;
+}
